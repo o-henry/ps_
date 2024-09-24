@@ -22,9 +22,30 @@
 		BAC2D9552CA13003005E7079 /* ps */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ps; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BAC2D9622CA13E69005E7079 /* Exceptions for "ps" folder in "ps" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				BOJ/2438.swift,
+				BOJ/2439.swift,
+				BOJ/2442.swift,
+				BOJ/2953.swift,
+				BOJ/10799.swift,
+				BOJ/10818.swift,
+				BOJ/10828.swift,
+				BOJ/10869.swift,
+				BOJ/BASE.swift,
+			);
+			target = BAC2D9542CA13003005E7079 /* ps */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BAC2D9572CA13003005E7079 /* ps */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BAC2D9622CA13E69005E7079 /* Exceptions for "ps" folder in "ps" target */,
+			);
 			path = ps;
 			sourceTree = "<group>";
 		};
@@ -94,6 +115,7 @@
 				TargetAttributes = {
 					BAC2D9542CA13003005E7079 = {
 						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
 					};
 				};
 			};
@@ -248,8 +270,11 @@
 		BAC2D95D2CA13003005E7079 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ps/BOJ/ps-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -257,8 +282,10 @@
 		BAC2D95E2CA13003005E7079 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ps/BOJ/ps-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
